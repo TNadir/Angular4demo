@@ -1,0 +1,53 @@
+<div class="fluid container">
+  <div class="row">
+
+    <div class="col-md-offset-4 col-md-4">
+
+      <div class="row  screen">
+        {{screenText}}
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+
+          <div *ngFor="let dispText of buttonTexts" class="col-md-4 ">
+            <div class="cell" (click)="onClick(dispText)">
+              {{ dispText }}
+            </div>
+
+          </div>
+
+        
+
+
+        </div>
+        <div class="col-md-3">
+
+     
+          <div class="operation" (click)="pressButton('/')">
+            /
+          </div>
+          <div class="operation" (click)="pressButton('x')">
+            x
+          </div>
+          <div class="operation" (click)="pressButton('-')">
+            -
+          </div>
+          <div class="operation" (click)="pressButton('+')">
+            +
+          </div>
+        </div>
+      </div>
+
+<div class="row clear" (click)="onClear()">
+CLEAR
+</div>
+
+
+
+
+
+    </div>
+
+  </div>
+</div>

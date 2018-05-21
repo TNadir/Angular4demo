@@ -1,0 +1,19 @@
+<ul>
+  <li *ngFor="let course of courses">
+    {{ course }}
+
+  </li>
+</ul>
+
+<table>
+  <tr>
+    <td [attr.width]="colSp" style="border-color: brown;border-width: 1em;border-style: solid">Lorem ipsum</td>
+
+  </tr>
+  <tr>
+    <td>lorem</td>
+    <td>lorem</td>
+  </tr>
+</table>
+
+<input type="text" [(ngModel)]="email" (keyup.enter)="changeText()">
