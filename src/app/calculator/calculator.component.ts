@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CalculatorComponent {
 
+
+   yeni="dsf";
   buttonTexts = ["7", "8", "9", "4", "5", "6", "1", "2", "3", ",", "0", "="];
   screenText = "0";
   defValue = "";
